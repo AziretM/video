@@ -1,0 +1,44 @@
+.video {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video > img {
+    width: 120%;
+}
+.video-container {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 888;
+    display: none;
+}
+
+video:focus {
+    outline: none;
+}
+.player{
+    width: 100%;
+}
+.close {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    padding: 15px;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.close > i {
+    color: rgb(255, 255, 255) !important;
+    font-size: 24px;
+    cursor: pointer;
+}
